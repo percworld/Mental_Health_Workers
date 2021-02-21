@@ -91,7 +91,7 @@ header {
 
 main {
   background-color: #92828D;
-  height: 100%;
+  height: 149%;
 }
 
 /* Contains Cards */
@@ -99,15 +99,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* flex-grow: 1; */
   width: 100%;
-  height: 100%;
+  height: 64%;
 }
 
 /* Individual Card */
 .card-container {
   width: 22%;
-  max-height: 45vh;
+  height: 45vh;
   min-height: 38vh;
   background-color: #ADAABF;
   contain: paint;
@@ -126,6 +125,7 @@ main {
   /* overflow: hidden; */
 }
 
+/* Card Photo positioning */
 .counselor-image {
   width: inherit;
   height: inherit;
@@ -134,10 +134,32 @@ main {
   object-position: 48% 21%;
   z-index: -1;
   opacity: 0.8;
-  filter: brightness(50%);       ;
-
+  filter: brightness(50%);
 }
 
+.image-2 {
+  object-position: 48% 41%;
+}
+.image-3 {
+  object-position: 48% 62%;
+}
+.image-4 {
+  object-position: 48% 75%;
+}
+.image-5 {
+  object-position: 48% 21%;
+}
+.image-6 {
+  object-position: 48% 23%;
+}
+.image-7 {
+  object-position: 48% 67%;
+}
+.image-8 {
+  object-position: 48% 41%;
+}
+
+/* Icons in image */
 .reply,
 .views,
 .views-number {
@@ -184,6 +206,7 @@ main {
   padding: 1vh;
   background-color: #92828D;
   border-radius: 6px;
+  color: 92828D
 }
 
 .playlist-title,
@@ -194,6 +217,7 @@ main {
 
 .playlist-name {
   margin: 0px;
+  height: 3vh;
 }
 
 .number {
@@ -258,6 +282,18 @@ main {
     font-size: 17px;
   }
 
+  .cards-container {
+    height: 55%;
+  }
+
+  .card-container {
+    height: 41vh;
+  }
+
+  .number {
+    font-size: 23px;
+  }
+
   .reply {
     top: -128px;
     left: -1px;
@@ -265,15 +301,15 @@ main {
   }
 
   .views {
-    top: -146px;
-    left: 26px;
+    top: -148px;
+    left: 28px;
     font-size: 11px;
   }
 
   .views-number {
     top: -173px;
-    left: 67px;
-    font-size: 25px;
+    left: 68px;
+    font-size: 21px;
   }
 }
 
@@ -333,15 +369,31 @@ main {
 
   /* Card */
   .views {
-    top: -146px;
-    left: 100px;
+    top: -148px;
+    left: 47px;
     font-size: 11px;
   }
 
   .views-number {
     top: -173px;
-    left: 137px;
+    left: 87px;
     font-size: 25px;
+  }
+
+  .name {
+    height: 4vh;
+  }
+
+  .cards-container {
+    height: 55.5%;
+  }
+
+  .card-container {
+    max-height: 39vh;
+  }
+
+  .number {
+    font-size: 32px;
   }
 
 }
