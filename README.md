@@ -4,6 +4,9 @@
 
 ![image of Soul Structure layout](./assets/Screen Shot 2021-02-21 at 12.53.44 PM.png)
 
+### Color palette compliments of [Coolors](Coolors.co)
+![Color palette[](./assets/Screen Shot 2021-02-21 at 2.05.04 PM.png)
+
 ### Original Comp for guidance:
 ![image of original layout](./assets/Screen Shot 2021-02-21 at 12.53.44 PM.png)
 
