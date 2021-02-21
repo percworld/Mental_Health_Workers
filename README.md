@@ -20,7 +20,7 @@
 
 
 #### Future Updates: 
-1. Could use a flexbox container instead for VIEWS area within each card container.
+1. Could use a flexbox container instead for VIEWS area within each card container. This branch has been created and experimented with but is not ready for implementation
 2. Could also use icons from font-awesome for sizing and container qualities (Appears to come with free account).
 3. Could use icons from Nucleo for their coloring options.  (Also possible with fontawesome but with a $70 yearly fee)
 
