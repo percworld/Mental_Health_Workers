@@ -15,7 +15,7 @@ html, body {
 header {
   /* background-size: cover; */
   width: 100%;
-  height: 15vh;
+  height: 11vh;
   background-color: #ADAABF;
   font-size: 16px;
   color: #2D5D7B;
@@ -69,7 +69,6 @@ header {
   font-family: 'Tangerine', serif;
   font-size: 48px;
   text-shadow: 4px 4px 4px #aaa
-
 }
 
 .logo-name2 {
@@ -78,15 +77,15 @@ header {
 
 .logo-image {
   width: 70px;
-  /* height: 60px; */
 }
 
-/* Page display title section ("Shares") */
+/* Page display title */
 .display-page {
   font-size: 30px;
   margin-left: 2vw;
   padding-top: 2vh;
   padding-bottom: 3vh;
+  color: #2D5D7B;
 }
 
 main {
@@ -114,15 +113,14 @@ main {
   flex-direction: column;
   box-shadow: 6px 6px 9px 1px #83e8ba,
               -6px -6px 9px 1px #83e8ba;
-  /* grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr; */
 }
 
 .photo-area {
   width: 100%;
   height: 8em;
-  padding-left: 0px;
+  padding-left: 0;
   /* contain: content; */
-  /* overflow: hidden; */
+  /* overflow: auto; */
 }
 
 /* Card Photo positioning */
@@ -206,7 +204,7 @@ main {
   padding: 1vh;
   background-color: #92828D;
   border-radius: 6px;
-  color: 92828D
+  color: #92828D
 }
 
 .playlist-title,
@@ -311,89 +309,4 @@ main {
     left: 68px;
     font-size: 21px;
   }
-}
-
-/* Tablet */
-@media screen and (max-width: 900px) {
-
-  .material-icons {
-    left: 2px;
-    margin-left: 0px;
-  }
-
-  .user {
-    padding-left: 0px;
-  }
-
-  header {
-    height: 8vh;
-    grid-template-columns: 2fr 2fr 3fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 15px;
-  }
-
-  .shares-bar {
-    margin-left: 1vw;
-  }
-
-  .videos-bar {
-    grid-area: 4 / 3 / 4 / 5;
-    margin-left: 2vw;
-  }
-
-  .videos {
-
-  }
-
-  .logo-bar {
-    grid-area: 4 / 4 / 5 / 5
-  }
-
-  .logo-name {
-    margin-left: 10vw;
-    bottom: 12px;
-    font-size: 24px;
-  }
-
-  .logo-name2 {
-    margin-left: -18px;
-  }
-
-  .logo-image {
-    width: 50px;
-  }
-
-  .display-page {
-    font-size: 17px;
-  }
-
-  /* Card */
-  .views {
-    top: -148px;
-    left: 47px;
-    font-size: 11px;
-  }
-
-  .views-number {
-    top: -173px;
-    left: 87px;
-    font-size: 25px;
-  }
-
-  .name {
-    height: 4vh;
-  }
-
-  .cards-container {
-    height: 55.5%;
-  }
-
-  .card-container {
-    max-height: 39vh;
-  }
-
-  .number {
-    font-size: 32px;
-  }
-
 }
