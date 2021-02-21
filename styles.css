@@ -1,0 +1,312 @@
+* {
+  /* outline: 2px solid red; */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0px;
+  /* background-color: #D6DBDF; */
+  overflow: auto;
+}
+
+
+header {
+  /* background-size: cover; */
+  width: 100%;
+  height: 11vh;
+  background-color: #ADAABF;
+  font-size: 16px;
+  color: #2D5D7B;
+  display: inline-grid;
+  grid-template-columns: 2fr 2fr 8fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Header Menus */
+.material-icons {
+  width: 30px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.user {
+  padding-left: 7px;
+}
+
+.username {
+  grid-column: 4 / 5;
+  grid-row: 1 / 1;
+}
+
+
+.shares-bar {
+  grid-area: 4 / 1 / 5 / 2;
+  margin-left: 20px;
+}
+
+.playlists-bar {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.videos-bar {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+/* Header Logo Area */
+.logo-bar {
+  grid-area: 4 / 4 / 5 / 5
+}
+
+.logo-name {
+  width: 180px;
+  position: relative;
+  bottom: 12px;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa
+}
+
+.logo-name2 {
+  margin-left: -18px;
+}
+
+.logo-image {
+  width: 70px;
+}
+
+/* Page display title */
+.display-page {
+  font-size: 30px;
+  margin-left: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  color: #2D5D7B;
+}
+
+main {
+  background-color: #92828D;
+  height: 149%;
+}
+
+/* Contains Cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 64%;
+}
+
+/* Individual Card */
+.card-container {
+  width: 22%;
+  height: 45vh;
+  min-height: 38vh;
+  background-color: #ADAABF;
+  contain: paint;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 9px 1px #83e8ba,
+              -6px -6px 9px 1px #83e8ba;
+}
+
+.photo-area {
+  width: 100%;
+  height: 8em;
+  padding-left: 0;
+  /* contain: content; */
+  /* overflow: auto; */
+}
+
+/* Card Photo positioning */
+.counselor-image {
+  width: inherit;
+  height: inherit;
+  padding-left: 0px;
+  object-fit: cover;
+  object-position: 48% 21%;
+  z-index: -1;
+  opacity: 0.8;
+  filter: brightness(50%);
+}
+
+.image-2 {
+  object-position: 48% 41%;
+}
+.image-3 {
+  object-position: 48% 62%;
+}
+.image-4 {
+  object-position: 48% 75%;
+}
+.image-5 {
+  object-position: 48% 21%;
+}
+.image-6 {
+  object-position: 48% 23%;
+}
+.image-7 {
+  object-position: 48% 67%;
+}
+.image-8 {
+  object-position: 48% 41%;
+}
+
+/* Icons in image */
+.reply,
+.views,
+.views-number {
+  position: relative;
+  color: #ADAABF;
+}
+
+.reply {
+  top: -126px;
+  left: 3px;
+  transform: scaleX(-1);
+}
+
+.views {
+  top: -137px;
+  left: 179px;
+  font-size: 11px;
+}
+
+.views-number {
+  top: -160px;
+  left: 223px;
+  font-size: 25px;
+}
+
+/* Text Box under counselor Image */
+.info-area {
+  padding-left: 11px;
+}
+
+.name {
+  margin-bottom: 0px;
+}
+
+.time {
+  font-size: 11px;
+}
+
+.site {
+  height: 5vh;
+  max-width: 15vw;
+  overflow: auto;
+  margin: 1vh 1.5vw 1.5vh 0px;
+  padding: 1vh;
+  background-color: #92828D;
+  border-radius: 6px;
+  color: #92828D
+}
+
+.playlist-title,
+.attachments-title {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.playlist-name {
+  margin: 0px;
+  height: 3vh;
+}
+
+.number {
+  margin: 0px;
+  font-size: 40px;
+  color: #83e8ba;
+}
+
+/* --MediaTypes-- */
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+
+  .material-icons {
+    left: 2px;
+    margin-left: 0px;
+  }
+
+  .user {
+    padding-left: 0px;
+  }
+
+  header {
+    height: 9vh;
+    grid-template-columns: 3fr 3fr 2fr 7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+  }
+
+  .shares-bar {
+    margin-left: 3vw;
+  }
+
+  .videos-bar {
+    grid-area: 4 / 3 / 4 / 5;
+  }
+
+  .videos {
+    display: grid;
+    grid-area: 4 / 3 / 4 / 5;
+  }
+
+  .logo-bar {
+    grid-area: 4 / 4 / 5 / 5
+  }
+
+  .logo-name {
+    margin-left: 10vw;
+    bottom: 12px;
+    font-size: 24px;
+  }
+
+  .logo-name2 {
+    margin-left: -18px;
+  }
+
+  .logo-image {
+    width: 50px;
+  }
+
+  .display-page {
+    font-size: 17px;
+  }
+
+  .cards-container {
+    height: 55%;
+  }
+
+  .card-container {
+    height: 41vh;
+  }
+
+  .number {
+    font-size: 23px;
+  }
+
+  .reply {
+    top: -128px;
+    left: -1px;
+    transform: scaleX(-1);
+  }
+
+  .views {
+    top: -148px;
+    left: 28px;
+    font-size: 11px;
+  }
+
+  .views-number {
+    top: -173px;
+    left: 68px;
+    font-size: 21px;
+  }
+}
